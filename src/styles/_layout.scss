@@ -1,0 +1,29 @@
+.body {
+
+    &__wrap {
+        margin: 1.8em 2.2em 5em 2.2em;
+    }
+}
+
+.bio {
+    margin: 0 0 2.8em 0;
+}
+
+.project-link {
+
+    margin: 0.05em 0;
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 2em 0;
+    }
+}
+
+.project-description {
+    
+    &__wrap {
+        width: clamp(270px, 60vw, 700px);
+        margin: 3em 0;
+    }
+}

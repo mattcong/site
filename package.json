@@ -1,0 +1,15 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "sass src/styles/index.scss dist/styles/index.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "motion": "^10.14.3",
+    "sass": "^1.56.1"
+  }
+}
