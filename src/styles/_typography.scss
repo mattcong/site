@@ -29,7 +29,6 @@ a {
 
         &--link {
             font-size: (calc($fs-body - (0.#{$i}rem / 2)));
-            transition: 0.15s color;
 
             &:hover {
                 color: #ff0000;
