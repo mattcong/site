@@ -69,7 +69,6 @@ a {
 }
 .body-1--link {
   font-size: calc(clamp(0.7rem, 1.5vw, 1rem) - (0.1rem / 2));
-  transition: 0.15s color;
 }
 .body-1--link:hover {
   color: #ff0000;
@@ -89,7 +88,6 @@ a {
 }
 .body-2--link {
   font-size: calc(clamp(0.7rem, 1.5vw, 1rem) - (0.2rem / 2));
-  transition: 0.15s color;
 }
 .body-2--link:hover {
   color: #ff0000;
@@ -109,7 +107,6 @@ a {
 }
 .body-3--link {
   font-size: calc(clamp(0.7rem, 1.5vw, 1rem) - (0.3rem / 2));
-  transition: 0.15s color;
 }
 .body-3--link:hover {
   color: #ff0000;
@@ -129,7 +126,6 @@ a {
 }
 .body-4--link {
   font-size: calc(clamp(0.7rem, 1.5vw, 1rem) - (0.4rem / 2));
-  transition: 0.15s color;
 }
 .body-4--link:hover {
   color: #ff0000;
@@ -149,7 +145,6 @@ a {
 }
 .body-5--link {
   font-size: calc(clamp(0.7rem, 1.5vw, 1rem) - (0.5rem / 2));
-  transition: 0.15s color;
 }
 .body-5--link:hover {
   color: #ff0000;
