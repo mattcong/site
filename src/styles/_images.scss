@@ -1,11 +1,11 @@
 $image-width: clamp(300px, 60vw, 650px);
 
 .project-image {
-    width: $image-width;
-    margin: 2em 0;
+  width: $image-width;
+  margin: 2em 0;
 
-    &__wrap {
-        display: flex;
-        flex-direction: column;
-    }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
 }

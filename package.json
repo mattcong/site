@@ -4,7 +4,7 @@
   "description": "Personal website",
   "main": "index.html",
   "scripts": {
-    "build:css": "sass src/styles/index.scss dist/styles/index.css"
+    "build:css": "sass --watch src/styles/index.scss dist/styles/index.css"
   },
   "author": "",
   "license": "ISC",

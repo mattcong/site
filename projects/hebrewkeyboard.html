@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hebrew Keyboard | Matt Congdon</title>
+    <meta name="description" content="Software developer & artist" />
+    <link rel="icon" href="../../assets/favicon.ico" />
+    <link rel="stylesheet" href="../../dist/styles/index.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="body__wrap">
+        <a class="body-2 link-text" href="../../index.html">&#8592; Back</a>
+        <div class="project-description__wrap">
+          <p class="body-3">Virtual keyboard for typing Modern Hebrew.</p>
+          <br />
+          <br />
+          <a
+            class="body-2 link-text"
+            href="https://hebrewkeyboard.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            >Site &#8599;</a
+          >
+          <a
+            class="body-2 link-text"
+            href="https://github.com/mattcong/hebrew-keyboard"
+            target="_blank"
+            rel="noreferrer"
+            >Repo &#8599;</a
+          >
+        </div>
+        <div class="project-image__wrap">
+          <div
+            class="project-image"
+            id="iframe-overlay"
+            onclick="removeOverlay()"
+            style="
+              height: 500px;
+              border: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px black dotted;
+              cursor: pointer;
+            "
+            src="https://hebrewkeyboard.netlify.app/"
+          >
+            <p class="body-1">Click to try</p>
+          </div>
+          <iframe
+            id="iframe-app"
+            style="display: none; height: 500px; border: none"
+            class="project-image"
+            src="https://hebrewkeyboard.netlify.app/"
+            title="Virtual Hebrew Keyboard"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <script>
+      function removeOverlay() {
+        var overlay = document.getElementById("iframe-overlay")
+        var iframe = document.getElementById("iframe-app")
+        overlay.style.display = "none"
+        iframe.style.display = "block"
+      }
+    </script>
+  </body>
+</html>

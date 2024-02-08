@@ -1,51 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gematria Calculator | Matt Congdon</title>
     <meta name="description" content="Software developer & artist" />
     <link rel="icon" href="../../assets/favicon.ico" />
-    <link rel="stylesheet" href="../../dist/styles/index.css">
-</head>
+    <link rel="stylesheet" href="../../dist/styles/index.css" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <div class="body__wrap">
-            <a class="body-2--link" href="../../index.html">&#8592; Back</a>
-            <div class="project-description__wrap">
-                <p class="body-5">
-                    Web app built with TypeScript, Node and Express.
-                    <br />
-                    <br />
-                    Users can choose from different ciphers to calculate the value of a word. Ciphers are created from
-                    classes constructed around specific alphanumeric patterns, meaning additional custom ciphers based
-                    on these patterns can be made easily.
-                    <br />
-                    <br />
-                    More information can be found on the GitHub README.
-                </p>
-                <br />
-                <br />
-                <a class="body-2--link" href="https://gematriacalculator.herokuapp.com/" target="_blank"
-                    rel="noreferrer">Site
-                    &#8599;</a>
-                <a class="body-2--link" href="https://github.com/mattcong/gematria-calculator" target="_blank"
-                    rel="noreferrer">Repo
-                    &#8599;</a>
-            </div>
-            <div class="project-image__wrap">
-                <img class="project-image" loading="lazy" alt="Desktop search bar view."
-                    src="../../assets/projects/gematria/gematria-desktop-1.png" />
-                <img class="project-image" loading="lazy" alt="Calculation results light mode."
-                    src="../../assets/projects/gematria/gematria-desktop-2.png" />
-                <img class="project-image" loading="lazy" alt="Calculation results dark mode."
-                    src="../../assets/projects/gematria/gematria-desktop-3.png" />
-            </div>
+      <div class="body__wrap">
+        <a class="body-2 link-text" href="../../index.html">Back</a>
+        <div class="project-description__wrap">
+          <p class="body-3">
+            Web app built with TypeScript and Next.js. Users can choose from different ciphers to
+            calculate the value of a word and find words that share the same value.
+            <br />
+            <br />
+            Since the data is static, the shared word return works by reading from a flat file. As
+            well as discounting the need for database management, this means each file exists as
+            a separate "dictionary", allowing users to filter the results by different texts.
+            <br />
+            <br />
+            The app's main functionality is this dynamic search so Next's SSR and route caching
+            features do not have much impact on performance, meaning optimisations had to be done
+            per-request. This involved precomputing and storing the values on the client whenever a
+            new cipher or text is selected.
+            <br />
+            <br />
+            More information can be found on the GitHub README.
+          </p>
+          <br />
+          <br />
+          <a
+            class="body-2 link-text"
+            href="https://gematriacalculator.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            >Site</a
+          >
+          <a
+            class="body-2 link-text"
+            href="https://github.com/mattcong/gematria-calculator"
+            target="_blank"
+            rel="noreferrer"
+            >Repo</a
+          >
         </div>
+        <div class="project-image__wrap">
+          <img
+            class="project-image"
+            loading="lazy"
+            alt="Desktop search bar view."
+            src="../../assets/projects/gematria/gematria-desktop-1.png"
+          />
+          <img
+            class="project-image"
+            loading="lazy"
+            alt="Calculation results light mode."
+            src="../../assets/projects/gematria/gematria-desktop-2.png"
+          />
+          <img
+            class="project-image"
+            loading="lazy"
+            alt="Calculation results dark mode."
+            src="../../assets/projects/gematria/gematria-desktop-3.png"
+          />
+        </div>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
