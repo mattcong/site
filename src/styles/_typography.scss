@@ -43,13 +43,29 @@ a {
 
 .link-text {
   text-wrap: none;
+  padding: 1px 2px;
+  margin: 0 2px;
+  border-bottom: 1px solid #424242;
 
   &:hover {
+    transform: translateY(1px);
     color: #ff0000;
+    transform: translateY(-1px);
+    padding: 1px;
+    margin: 0 2px -1px 2px;
+    border: 1px solid #424242;
   }
 
   &:focus {
-    color: #00bfff;
+    color: #ff0000;
     outline: none;
+    transform: translateY(-1px);
+    padding: 1px;
+    margin: 0 2px -1px 2px;
+    border: 1px solid #424242;
+  }
+
+  &:active {
+    color: #00bfff;
   }
 }

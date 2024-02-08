@@ -30,9 +30,6 @@
   margin: 0 0 2.8em 0;
 }
 
-.project-link {
-  margin: 0.05em 0;
-}
 .project-link__wrap {
   display: flex;
   flex-direction: column;
@@ -120,13 +117,28 @@ a {
 
 .link-text {
   text-wrap: none;
+  padding: 1px 2px;
+  margin: 0 2px;
+  border-bottom: 1px solid #424242;
 }
 .link-text:hover {
+  transform: translateY(1px);
   color: #ff0000;
+  transform: translateY(-1px);
+  padding: 1px;
+  margin: 0 2px -1px 2px;
+  border: 1px solid #424242;
 }
 .link-text:focus {
-  color: #00bfff;
+  color: #ff0000;
   outline: none;
+  transform: translateY(-1px);
+  padding: 1px;
+  margin: 0 2px -1px 2px;
+  border: 1px solid #424242;
+}
+.link-text:active {
+  color: #00bfff;
 }
 
 .project-image {
