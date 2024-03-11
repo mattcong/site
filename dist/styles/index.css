@@ -118,24 +118,18 @@ a {
 .link-text {
   text-wrap: none;
   padding: 1px 2px;
-  margin: 0 2px;
-  border-bottom: 1px solid #424242;
+  margin: 1px 2px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid;
 }
 .link-text:hover {
-  transform: translateY(1px);
   color: #ff0000;
-  transform: translateY(-1px);
-  padding: 1px;
-  margin: 0 2px -1px 2px;
-  border: 1px solid #424242;
+  border: 1px solid;
 }
 .link-text:focus {
   color: #ff0000;
   outline: none;
-  transform: translateY(-1px);
-  padding: 1px;
-  margin: 0 2px -1px 2px;
-  border: 1px solid #424242;
+  border: 1px solid;
 }
 .link-text:active {
   color: #00bfff;
