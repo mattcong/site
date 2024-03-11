@@ -135,6 +135,25 @@ a {
   color: #00bfff;
 }
 
+.ascii-text {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 900px) {
+  .ascii-text {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 690px) {
+  .ascii-text {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 580px) {
+  .ascii-text {
+    font-size: 0.3rem;
+  }
+}
 .project-image {
   width: clamp(300px, 60vw, 650px);
   margin: 2em 0;
