@@ -26,14 +26,17 @@
   margin: 1.8em 2.2em 5em 2.2em;
 }
 
-.bio {
+.section {
+  margin: 0 0 2em 0;
+}
+
+.contact-link__wrap {
   margin: 0 0 2.8em 0;
 }
 
 .project-link__wrap {
   display: flex;
   flex-direction: column;
-  margin: 0 0 2em 0;
 }
 
 .project-description__wrap {

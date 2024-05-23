@@ -4,21 +4,20 @@
   }
 }
 
-.bio {
+.section {
+  margin: 0 0 2em 0;
+}
+
+.contact-link__wrap {
   margin: 0 0 2.8em 0;
 }
 
-.project-link {
-  &__wrap {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 2em 0;
-  }
+.project-link__wrap {
+  display: flex;
+  flex-direction: column;
 }
 
-.project-description {
-  &__wrap {
-    width: clamp(300px, 70vw, 800px);
-    margin: 3em 0;
-  }
+.project-description__wrap {
+  width: clamp(300px, 70vw, 800px);
+  margin: 3em 0;
 }
