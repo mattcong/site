@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.mattcongdon.uk/sitemap.xml
+Sitemap: https://www.mattcongdon.net/sitemap.xml
