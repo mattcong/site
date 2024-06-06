@@ -8,7 +8,7 @@ $scale-factor: 1px;
 
 html,
 body {
-  font-family: "Spline Sans Mono", monospace;
+  font-family: "Spline Sans Mono", monospace, sans-serif;
 }
 
 p {
@@ -39,6 +39,16 @@ a {
 
 .bold-text {
   font-weight: 600;
+}
+
+
+.xl-text {
+  font-size: 2rem;
+}
+@media (max-width: 780px) {
+  .xl-text {
+    font-size: 1.6rem;
+  }
 }
 
 .link-text {
